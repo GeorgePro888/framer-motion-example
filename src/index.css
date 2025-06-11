@@ -1,0 +1,14 @@
+@import "tailwindcss";
+
+body {
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.box {
+  width: 300px;
+  height: 300px;
+  border-radius: 100%;
+  background: yellow;
+}
