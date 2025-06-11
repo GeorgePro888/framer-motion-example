@@ -16,7 +16,12 @@ const App = () => {
     <motion.div className="box1 bg-amber-600" />
     <motion.div className="box1 bg-yellow-600" animate={{ translateY: "2rem", scale: 1.5 }} />
     <motion.div className="box1 bg-red-600" animate={{ translateX: "11rem",scaleX: 1.7 }} />
-    <motion.div className="box1 bg-purple-600" animate={{ translateX: "22rem",scale: 1.7 }} />
+    <motion.div className="box1 bg-purple-600" animate={{ translateX: "22rem",scaleY: 1.7 }} />
+    
+    <motion.div className="box1 bg-amber-600" />
+    <motion.div className="box1 bg-yellow-600" animate={{ translateY: "2rem", skew: 17 }} />
+    <motion.div className="box1 bg-red-600" animate={{ translateX: "11rem",skewX: 17 }} />
+    <motion.div className="box1 bg-purple-600" animate={{ translateX: "22rem",skewY: 17 }} />
 
 
   </div>;
