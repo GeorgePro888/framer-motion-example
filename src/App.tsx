@@ -22,8 +22,18 @@ const App = () => {
     <motion.div className="box1 bg-yellow-600" animate={{ translateY: "2rem", skew: 17 }} />
     <motion.div className="box1 bg-red-600" animate={{ translateX: "11rem",skewX: 17 }} />
     <motion.div className="box1 bg-purple-600" animate={{ translateX: "22rem",skewY: 17 }} />
-
-
+    
+    <motion.div className="box1 bg-amber-600" />
+    <motion.div className="box1 bg-yellow-600"
+      initial={{ x: 0 }}
+      animate={{ translateX: "20rem", skew: 17 }}
+      transition={{ duration: 5 }}
+    />
+    <motion.div className="box1 bg-red-600"
+      initial={{ x: 0 }}
+      animate={{ translateX: "11rem", skewX: 17 }}
+      transition={{ duration: 4, ease: "easeInOut", delay: 2 }}
+    />
   </div>;
 
 };
