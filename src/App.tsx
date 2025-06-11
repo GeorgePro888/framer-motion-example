@@ -1,7 +1,11 @@
 import { motion } from "framer-motion"
+import PulsingButton from "./components/PulsingButton";
+import BouncingLoader from "./components/BouncingLoader";
 
 const App = () => {
   return <div>
+    <PulsingButton />
+    <BouncingLoader />
     <motion.div className="box bg-amber-600"  animate={{ x: "100rem" }} />
     <motion.div className="box bg-green-600"  animate={{ x: "10%" }} />
     <motion.div className="box bg-blue-600" animate={{ y: 10 }} />
@@ -34,8 +38,18 @@ const App = () => {
       animate={{ translateX: "11rem", skewX: 17 }}
       transition={{ duration: 4, ease: "easeInOut", delay: 2 }}
     />
+    
+    <motion.div className="box1 bg-black"
+      animate={{ 
+        scale: [1, 2, 3, 4, 1],
+        rotate: [0, 0, 270, 270, 0],
+        borderRadius: ["20%", "20%", "50%", "50%", "20%"],
+       }}
+      transition={{ duration: 4, ease: "easeInOut", delay: 2 }}
+    />
   </div>;
 
 };
 
 export default App;
+
